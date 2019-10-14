@@ -1,0 +1,21 @@
+.c-safe-table {
+    th {
+        @include media-breakpoint-down(md) {
+            display: block;
+        }
+
+        @include media-breakpoint-up(lg) {
+            white-space: nowrap;
+        }
+    }
+
+    td {
+        @include media-breakpoint-down(md) {
+            display: block;
+        }
+
+        @include media-breakpoint-up(lg) {
+            word-break: break-word;
+        }
+    }
+}

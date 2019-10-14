@@ -1,0 +1,38 @@
+.c-footer {
+    background-color: #dfdfdf;
+
+    .nav {
+        display: inline-flex;
+    }
+
+    &__block {
+       padding-top: $spacer;
+       padding-bottom: $spacer;
+
+       p {
+           &:last-child {
+               margin-bottom: 0;
+           }
+       }
+    }
+
+    &__nav-title {
+        @include font-size($h6-font-size);
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+
+        &--highlighted {
+            color: $link-color;
+        }
+    }
+
+    &__nav-link {
+        color: inherit;
+        line-height: 1.8;
+
+        &--highlighted {
+            color: $link-color;
+            text-decoration: underline;
+        }
+    }
+}

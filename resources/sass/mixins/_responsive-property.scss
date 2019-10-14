@@ -1,0 +1,17 @@
+@mixin responsive-property($prop, $min-value, $max-value, $lower-value-range: $lower-range, $upper-value-range: $upper-range) {
+    $values-range: $max-value - $min-value;
+    $breakpoints-range: $upper-value-range - $lower-value-range;
+
+    $values-range: strip-unit($values-range);
+    $breakpoints-range: strip-unit($breakpoints-range);
+
+    #{$prop}: calc(#{$min-value} + #{$values-range} * (100vw - #{$lower-value-range}) / #{$breakpoints-range});
+
+    @media screen and (max-width: $lower-value-range) {
+        #{$prop}: $min-value;
+    }
+
+    @media screen and (min-width: $upper-value-range) {
+        #{$prop}: $max-value;
+    }
+}

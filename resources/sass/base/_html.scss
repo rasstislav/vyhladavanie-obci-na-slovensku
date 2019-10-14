@@ -1,0 +1,3 @@
+html {
+    @include responsive-property(font-size, $min-font-size, $max-font-size);
+}

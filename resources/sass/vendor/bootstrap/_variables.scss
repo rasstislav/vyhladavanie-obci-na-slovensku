@@ -1,0 +1,82 @@
+$rem-base: 16px;
+
+
+// Color system
+$green: #09d3a9;
+$info: #007bff;
+
+
+// Options
+$enable-responsive-font-sizes: true;
+
+
+// Spacing
+$spacer: rem-calc(20px);
+
+$spacers: (
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: ($spacer * 0.75),
+    4: ($spacer),
+    5: ($spacer * 1.25),
+    6: ($spacer * 1.5),
+    7: ($spacer * 2),
+    8: ($spacer * 3),
+);
+
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1180px
+);
+
+
+// Grid columns
+$grid-gutter-width: 40px;
+
+
+// Typography
+// $font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+
+$font-weight-normal: 300;
+
+$line-height-base: 1.6;
+
+$display3-size: 4rem;
+$display4-size: 2.5rem;
+
+$display3-weight: 200;
+$display4-weight: 200;
+
+
+// Buttons + Forms
+$input-btn-padding-y: rem-calc(5px);
+$input-btn-padding-x: rem-calc(25px);
+
+
+// Forms
+$input-padding-x: rem-calc(16px);
+
+
+// Navs
+$nav-link-padding-y: 0;
+
+
+// Navbar
+$navbar-padding-y: rem-calc(12px);
+$navbar-padding-x: 0;
+
+$navbar-nav-link-padding-x: 0;
+
+
+// Jumbotron
+// $jumbotron-padding: 0;
+// $jumbotron-bg: ;
+
+// Cards
+$card-border-width: 0;
+$card-border-radius: 0;

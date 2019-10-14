@@ -1,0 +1,47 @@
+.c-main-search {
+    background-image: linear-gradient(to bottom right, #0977f0, #13aef7);
+    color: $white;
+
+    &__search-field {
+        max-width: rem-calc(549px);
+
+        .vs__dropdown-toggle {
+            padding: 0;
+            background-color: $white;
+            border: none;
+            box-shadow: $box-shadow;
+        }
+
+        .vs__selected-options {
+            padding: 0;
+        }
+
+        .vs__selected {
+            margin: 0;
+            padding: rem-calc(0 0 0 27px);
+            font-weight: 400;
+        }
+
+        .vs__search {
+            height: rem-calc(49px);
+            margin: 0;
+            padding: rem-calc(0 0 0 27px);
+            border: none;
+            color: map_get($vs-colors, 'dark');
+            font-weight: 400;
+        }
+
+        .vs__actions {
+            padding-top: 0;
+        }
+
+        .vs__dropdown-menu {
+            border: none;
+            color: $black;
+        }
+
+        .vs__no-options {
+            padding: rem-calc(0 27px);
+        }
+    }
+}
